@@ -38,7 +38,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_LOGIN }}/node-docker:latest
+          tags: andrenextu/node-docker:latest
 
       - name: Output image digest
         run: echo Image digest ${{ steps.push.outputs.digest }}
